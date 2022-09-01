@@ -1,0 +1,166 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    background: url('https://webstatic-sea.phazed.xyz/cdn/streammanagerbg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+  
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    box-shadow: #0005 5px 5px 5px;
+}
+  
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+  
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+  
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: gray;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.window{
+    background: rgba(221, 221, 221, 0.329);
+    backdrop-filter: blur(2px);
+    width: 350px;
+    padding: 15px;
+    border-radius: 10px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: #0005 0px 0px 10px;
+    transition: opacity 0.25s;
+}
+
+.window-draggable{
+    background: rgba(145, 145, 145, 0.329);
+    backdrop-filter: blur(2px);
+    width: calc(100% + 16px);
+    padding: 7px;
+    border-radius: 10px;
+    margin: -15px;
+    margin-bottom: 0px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.window-content{
+    text-align: center;
+}
+
+.verButton{
+    padding: 5px 10px;
+    display: inline-block;
+    background: #cfcfcf55;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.textInput{
+    margin-top: 10px;
+    width: calc(100% - 30px);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(228, 228, 228, 0.568);
+    outline: none;
+    font-size: 15px;
+}
+
+.cls{
+    padding: 10px;
+    text-align: left;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cls:hover{
+    border: black 1px solid;
+    padding: 9px;
+}
+
+.code{
+    background: black;
+    text-align: left;
+    color: white;
+    overflow: auto;
+}
+
+.TypeName{
+    color: rgb(0, 162, 255);
+    font-style: italic;
+}
+
+.StaticName{
+    color: #7100f1;
+}
+
+.IncludeName{
+    color: rgb(231, 0, 0);
+}
+
+.strText{
+    color: rgb(0, 255, 0);
+}
+
+.nameSpaceType{
+    color: rgb(255, 255, 153);
+    text-decoration: underline;
+}
+
+.comment{
+    color: gray; 
+}
